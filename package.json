@@ -1,0 +1,42 @@
+{
+  "name": "storybook-rsc-demo",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "pnpm storybook",
+    "lint": "next lint",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "chromatic": "npx chromatic --project-token=chpt_a8514d6ceda9b41"
+  },
+  "dependencies": {
+    "next": "14.0.4",
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "@storybook/addon-essentials": "^8.0.0-alpha.3",
+    "@storybook/addon-links": "^8.0.0-alpha.3",
+    "@storybook/addon-onboarding": "^1.0.10",
+    "@storybook/addons": "7.6.0-beta.2",
+    "@storybook/api": "7.6.0-beta.2",
+    "@storybook/blocks": "^8.0.0-alpha.3",
+    "@storybook/jest": "0.2.3-next.0",
+    "@storybook/nextjs": "^8.0.0-alpha.3",
+    "@storybook/react": "^8.0.0-alpha.3",
+    "@storybook/test": "^8.0.0-alpha.3",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "msw": "2",
+    "msw-storybook-addon": "2.0.0--canary.122.06f0c92.0",
+    "storybook": "^8.0.0-alpha.3",
+    "storybook-addon-module-mock": "^1.1.2",
+    "typescript": "^5"
+  },
+  "msw": {
+    "workerDirectory": "public"
+  }
+}
